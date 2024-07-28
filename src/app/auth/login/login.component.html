@@ -1,0 +1,46 @@
+<div class="auth-container">
+  <div class="auth-left">
+    <h1>Pawtopia</h1>
+    <p>Connect with pet lovers around the world.</p>
+  </div>
+  <div class="auth-right">
+    <h2>Login</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div nz-form-item>
+        <div nz-form-label>
+          <label for="email">Email</label>
+        </div>
+        <div nz-form-control>
+          <input
+            nz-input
+            id="email"
+            type="email"
+            [(ngModel)]="loginData.email"
+            name="email"
+            required
+          />
+        </div>
+      </div>
+      <div nz-form-item>
+        <div nz-form-label>
+          <label for="password">Password</label>
+        </div>
+        <div nz-form-control>
+          <input
+            nz-input
+            id="password"
+            type="password"
+            [(ngModel)]="loginData.password"
+            name="password"
+            required
+          />
+        </div>
+      </div>
+      <div nz-form-item>
+        <div nz-form-control>
+          <button nz-button nzType="primary">Login</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
